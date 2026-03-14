@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Cuerpo de la calculadora -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M22,16 Q16,16 16,22 L16,86 Q16,92 22,92 L86,92 Q92,92 92,86 L92,22 Q92,16 86,16 Z" />
+    <!-- Pantalla naranja -->
+    <path android:fillColor="#FF9F0A"
+        android:pathData="M22,20 L86,20 L86,44 L22,44 Z" />
+    <!-- Numero en pantalla -->
+    <path android:fillColor="#1C1C1E"
+        android:pathData="M60,26 L82,26 L82,38 L60,38 Z" />
+    <!-- Fila 1 botones -->
+    <path android:fillColor="#636366"
+        android:pathData="M24,50 L36,50 L36,60 L24,60 Z
+                          M40,50 L52,50 L52,60 L40,60 Z
+                          M56,50 L68,50 L68,60 L56,60 Z" />
+    <path android:fillColor="#FF9F0A"
+        android:pathData="M72,50 L84,50 L84,60 L72,60 Z" />
+    <!-- Fila 2 botones -->
+    <path android:fillColor="#2D2D2D"
+        android:pathData="M24,64 L36,64 L36,74 L24,74 Z
+                          M40,64 L52,64 L52,74 L40,74 Z
+                          M56,64 L68,64 L68,74 L56,74 Z" />
+    <path android:fillColor="#FF9F0A"
+        android:pathData="M72,64 L84,64 L84,74 L72,74 Z" />
+    <!-- Fila 3 -->
+    <path android:fillColor="#2D2D2D"
+        android:pathData="M24,78 L52,78 L52,88 L24,88 Z
+                          M56,78 L68,78 L68,88 L56,88 Z" />
+    <path android:fillColor="#FF9F0A"
+        android:pathData="M72,78 L84,78 L84,88 L72,88 Z" />
+</vector>

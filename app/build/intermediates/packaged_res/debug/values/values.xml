@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btn_function">#636366</color>
+    <color name="btn_number">#2D2D2D</color>
+    <color name="btn_operator">#FF9F0A</color>
+    <color name="calc_background">#1C1C1E</color>
+    <color name="ic_launcher_background">#FF9F0A</color>
+    <color name="text_secondary">#8E8E93</color>
+    <color name="text_white">#FFFFFF</color>
+    <string name="app_name">Calculadora Base</string>
+    <style name="Theme.Calculadora" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@color/calc_background</item>
+        <item name="android:statusBarColor">@color/calc_background</item>
+        <item name="android:navigationBarColor">@color/calc_background</item>
+        <item name="colorPrimary">@color/btn_operator</item>
+        <item name="colorPrimaryVariant">@color/btn_operator</item>
+        <item name="colorOnPrimary">@color/text_white</item>
+    </style>
+</resources>
