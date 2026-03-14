@@ -48,13 +48,27 @@ public class MainActivity extends AppCompatActivity {
             num1 = 0; num2 = 0; operator = "";
         });
 
-        // Operaciones Diego Andrés Cova Cardenas
+        // Suma
+        findViewById(R.id.btnAdd).setOnClickListener(v -> {
+            num1 = Double.parseDouble(tvDisplay.getText().toString());
+            operator = "+";
+            tvHistory.setText(num1 + " +");
+            newInput = true;
+        });
 
         // Resta
         findViewById(R.id.btnSubtract).setOnClickListener(v -> {
             num1 = Double.parseDouble(tvDisplay.getText().toString());
             operator = "-";
             tvHistory.setText(num1 + " -");
+            newInput = true;
+        });
+
+        // Multiplicacion
+        findViewById(R.id.btnMultiply).setOnClickListener(v -> {
+            num1 = Double.parseDouble(tvDisplay.getText().toString());
+            operator = "*";
+            tvHistory.setText(num1 + " ×");
             newInput = true;
         });
 
@@ -70,12 +84,16 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnEquals).setOnClickListener(v -> {
             num2 = Double.parseDouble(tvDisplay.getText().toString());
             switch (operator) {
+                case "+": result = num1 + num2; break;
                 case "-": result = num1 - num2; break;
+                case "*": result = num1 * num2; break;
                 case "/":
                     if (num2 == 0) { tvDisplay.setText("Error"); return; }
-                    result = num1 / num2; break;
+                    result = num1 / num2;
+                    break;
                 default: return;
             }
+
             tvHistory.setText(num1 + " " + operator + " " + num2 + " =");
             tvDisplay.setText(result % 1 == 0 ?
                     String.valueOf((int) result) : String.valueOf(result));
